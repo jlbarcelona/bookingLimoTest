@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap');
+body{
+  font-family: "Kedebideri", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ddd; /* keeps neutral border */
+}
+.suggestions {
+    position: fixed;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    max-height: 260px;
+    overflow-y: auto;
+    z-index: 999999;
+
+    width: 100%; /* will be set by JS */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    display: none;
+}
+
+.suggestion-item {
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.suggestion-item:hover {
+    background: #f5f9ff;
+}
+
+.theme-btn-submit{
+    background-color: #CFB053!important;
+    color: #fff!important;
+    border-color: #CFB053!important;
+    border-width: 2px;
+}
+.theme-icon-logo{
+    color: #5D5FA3!important;
+    font-family: "Kedebideri", sans-serif !important;
+    font-weight: 900;
+    font-style: normal;
+}
+.theme-btn{
+    background-color: #ffffff!important;
+    color: #767676!important;
+    border-color: #767676!important;
+    border-width: 2px;
+}
+.theme-btn-active{
+    background-color: #FCF9F2!important;
+    color: #CFB053!important;
+    border-color: #CFB053!important;
+    border-width: 2px;
+}
+.action-label{
+    color: #CFB053!important;
+    cursor: pointer;
+    text-decoration: none;
+}
+.action-label-add{
+    color: #CFB053!important;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.action-label-add:hover{
+    color: #a58b3b!important;
+    cursor: pointer;
+    text-shadow: offset-x offset-y blur-radius color;
+    text-decoration: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+input[type="date"],
+input[type="time"] {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.theme-input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.theme-input-group input,
+.theme-input-group select {
+    width: 100%;
+    height: 60px!important;
+    font-size: 16px;
+    color: #;
+    padding: 0 15px 0 45px!important;
+    background: transparent;
+    border: 1.2px solid #767676;
+    outline: none;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Make intl-tel-input full width */
+.iti {
+    width: 100% !important;
+}
+
+/* Make the input fill container */
+.iti input {
+    width: 100% !important;
+    height: 60px!important;
+    font-size: 16px;
+    color: #767676;
+    padding: 0 15px 0 45px!important;
+    background: transparent;
+    border: 1.2px solid #767676;
+    outline: none;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Fix dropdown alignment */
+.iti__country-list {
+    z-index: 9999;
+}
+
+.theme-input-group select {
+    cursor: pointer;
+}
+.iti__selected-flag{
+    height: 58px!important;
+}
+/* LABEL */
+.theme-input-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #767676;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background: #fff;
+}
+
+.theme-input-group .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #CFB053;
+    font-size: 16px;
+}
+
+.theme-input-group .input-icon-remove {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.theme-input-group input:focus ~ label,
+.theme-input-group input:valid ~ label,
+.theme-input-group input.is-invalid ~ label {
+    top: 0;
+    font-size: 12px;
+    color: #CFB053;
+}
+
+.invalid-feedback {
+    margin-top: 4px;
+    display: block;
+}
+
+.theme-input-group select:invalid {
+    color: transparent;
+}
+
+.theme-input-group select:valid {
+    color: #fff;
+}
+.form-control.is-invalid {
+    background-image: none !important;
+    box-shadow: none !important;
+}
+.form-invalid{
+    border-color: ;
+}
+.theme-invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #dc3545;
+}
+
+.theme-is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.theme-is-invalid ~ .theme-invalid-feedback {
+    display: block;
+}
+
+.theme-input-group input.form-control {
+    height: 58px;
+    padding-left: 40px;
+}
+
+.theme-input-group .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 29px; /* half of 58px */
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.theme-input-group .input-icon-remove {
+    position: absolute;
+    right: 15px;
+    top: 29px; /* half of 58px */
+    transform: translateY(-50%);
+}
