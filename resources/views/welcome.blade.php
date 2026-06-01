@@ -118,7 +118,7 @@
                                 <div id="spinner_loading" class="text-center mt-2"></div>
 
                                  <div class="col-lg-12 mt-4 contact_information_text d-none">
-                                    <h5 class="fw-bold"><small id="contact_information_message">We don't have that phone number on file. Please provide additional contact information.</small></h5>
+                                    <h5 class="fw-bold"><small id="contact_information_message"></small></h5>
                                 </div>
                             </div>
 
@@ -183,7 +183,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js" integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkky1gsfW0C_LNEsgfHpfOYwNxAXt78i4&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ config('app.mapKey') }}&libraries=places"></script>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/js/intlTelInput.min.js"></script>
 <script src="{{ asset('js/form-script.js') }}"></script>
 <script src="{{ asset('js/map.js') }}"></script>

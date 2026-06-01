@@ -123,4 +123,5 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'mapKey' => 'AIzaSyDkky1gsfW0C_LNEsgfHpfOYwNxAXt78i4',
 ];
